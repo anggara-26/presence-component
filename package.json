@@ -1,0 +1,66 @@
+{
+  "name": "presence-components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/react-component-library.cjs",
+      "import": "./dist/react-component-library.es.js"
+    },
+    "./styles.css": {
+      "require": "./dist/styles.css",
+      "default": "./dist/styles.css"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run build:css",
+    "build:css": "tailwindcss -m -i ./src/style.css -o ./dist/styles.css",
+    "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
+    "storybook:css": "tailwindcss -w -i ./src/style.css -o ./src/index.css",
+    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
+    "build-storybook:css": "tailwindcss -m -i ./src/style.css -o ./src/index.css",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.2.0-rc.0",
+    "@storybook/addon-interactions": "^7.2.0-rc.0",
+    "@storybook/addon-links": "^7.2.0-rc.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.0-rc.0",
+    "@storybook/react": "^7.2.0-rc.0",
+    "@storybook/react-vite": "^7.2.0-rc.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.6.13",
+    "postcss": "^8.4.27",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.2.0-rc.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^3.4.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}

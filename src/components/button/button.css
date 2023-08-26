@@ -1,0 +1,81 @@
+/* Button */
+.presence-button--primary {
+  background: rgb(0, 133, 255);
+  background: var(
+    --extra-color-gradient-blue,
+    linear-gradient(134deg, #0085ff 0%, #006acc 100%)
+  ) !important;
+  @apply text-white;
+}
+
+.presence-button--secondary {
+  color: var(--primary-600, #006acc);
+  border: 1.5px solid var(--primary-500, #0085ff);
+}
+
+.presence-button--tertiary {
+  color: var(--extra-color-linking-text, #6e5de7);
+}
+
+.presence-button--disabled {
+  color: var(--neutral-400, #999);
+  background: var(--neutral-100, #e6e6e6) !important;
+}
+
+.presence-button--primary:active,
+.presence-button--secondary:active {
+  background: var(--primary-600, #006acc) !important;
+  @apply text-white;
+}
+
+.presence-button--small {
+  @apply p-3 rounded-xl;
+}
+
+.presence-button--medium {
+  @apply p-3.5 rounded-2xl;
+}
+
+.presence-button--large {
+  border-radius: 18px;
+  padding: 16px 54px;
+}
+
+/* FABButton */
+.presence-fabbutton--primary {
+  background: var(
+    --extra-color-gradient-blue,
+    linear-gradient(134deg, #0085ff 0%, #006acc 100%)
+  ) !important;
+  @apply text-white;
+}
+
+.presence-fabbutton--secondary {
+  color: var(--primary-600, #006acc);
+  border: 1px solid var(--primary-500, #0085ff);
+}
+
+.presence-fabbutton--disabled {
+  color: var(--neutral-400, #999);
+  background: var(--neutral-200, #ccc) !important;
+}
+
+.presence-fabbutton--primary:active,
+.presence-fabbutton--secondary:active {
+  background: var(--primary-600, #006acc) !important;
+  @apply text-white;
+}
+
+.presence-fabbutton--small {
+  @apply flex flex-row justify-center items-center gap-2 p-3 rounded-xl;
+}
+
+.presence-fabbutton--medium {
+  @apply flex flex-row justify-center items-center gap-2.5 p-3.5 rounded-2xl;
+}
+
+.presence-fabbutton--large {
+  border-radius: 10px;
+  padding: 16px 50px;
+  @apply flex flex-row justify-center items-center gap-2.5 p-4 rounded-2xl;
+}

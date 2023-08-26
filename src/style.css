@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import "./components/style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Nunito", sans-serif;
+  /* Color */
+  /* primary color */
+  --primary-50: #e5f3ff;
+  --primary-100: #cce7ff;
+  --primary-200: #99ceff;
+  --primary-300: #66b6ff;
+  --primary-400: #339dff;
+  --primary-500: #0085ff;
+  --primary-600: #006acc;
+  --primary-700: #005099;
+  --primary-800: #003566;
+  --primary-850: #00284c;
+  /* warning color */
+  --warning-50: #fffbea;
+  --warning-100: #fff8d5;
+  --warning-200: #99ceff;
+  --warning-300: #ffe980;
+  --warning-400: #ffe155;
+  --warning-500: #ffda2b;
+  --warning-600: #ccae22;
+  --warning-700: #99831a;
+  --warning-800: #665711;
+  --warning-850: #4c410d;
+  /* success color */
+  --success-50: #e6f9ee;
+  --success-100: #d1f5e0;
+  --success-200: #a8ebc4;
+  --success-300: #7ee2a8;
+  --success-400: #54d98c;
+  --success-500: #2ecc71;
+  --success-600: #25a25a;
+  --success-700: #1b7943;
+  --success-800: #124f2c;
+  --success-850: #0d3a20;
+  /* danger color */
+  --danger-50: #ffebea;
+  --danger-100: #ffd7d6;
+  --danger-200: #ffafad;
+  --danger-300: #ff8683;
+  --danger-400: #ff5e5a;
+  --danger-500: #ff3631;
+  --danger-600: #cc2b27;
+  --danger-700: #99201d;
+  --danger-800: #661614;
+  --danger-850: #4c100f;
+  /* neutral color */
+  --neutral-50: #ffffff;
+  --neutral-100: #e6e6e6;
+  --neutral-200: #cccccc;
+  --neutral-300: #b3b3b3;
+  --neutral-400: #999999;
+  --neutral-500: #808080;
+  --neutral-600: #666666;
+  --neutral-700: #4d4d4d;
+  --neutral-800: #333333;
+  --neutral-900: #000000;
+  /* extra color */
+  --extra-color-linking-text: #6e5de7;
+  --extra-color-gradient-blue: linear-gradient(
+    134deg,
+    #0085ff 0%,
+    #006acc 100%
+  );
+}
+
+/* Typography */
+/* heading */
+.heading-1,
+.presence-avatar--large {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+.heading-2,
+.presence-avatar--medium {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.heading-3,
+.presence-button--large,
+.presence-fabbutton--large {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+.heading-4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+.heading-5,
+.presence-button--medium,
+.presence-fabbutton--medium {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.heading-6 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.heading-7,
+.presence-button--small,
+.presence-fabbutton--small {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+/* subhead & body */
+.heading-sub-1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+.heading-sub-2 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.heading-sub-3 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.paragraph-1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+.paragraph-2 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.paragraph-3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.paragraph-4 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
