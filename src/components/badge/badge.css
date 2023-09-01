@@ -4,10 +4,10 @@
 
 .presence-avatar--medium {
   line-height: 48px !important;
-  @apply w-12 h-12;
+  @apply w-12 h-12 text-h2;
 }
 
 .presence-avatar--large {
   line-height: 96px !important;
-  @apply w-24 h-24;
+  @apply w-24 h-24 text-h1;
 }

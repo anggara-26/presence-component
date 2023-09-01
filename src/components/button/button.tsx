@@ -4,9 +4,9 @@ interface ButtonProps {
    */
   type?: "button" | "reset" | "submit";
   /**
-   * Is this the principal call to action on the page?
+   * What type of style you want to use?
    */
-  primary?: boolean;
+  buttonStyle?: "primary" | "secondary" | "tertiary";
   /**
    * Does user can take an action with this button?
    */
@@ -46,7 +46,7 @@ interface ButtonProps {
  */
 export const Button = ({
   type = "button",
-  primary = false,
+  buttonStyle = "secondary",
   disable = false,
   backgroundColor,
   color,
@@ -57,21 +57,18 @@ export const Button = ({
   className,
   ...props
 }: ButtonProps) => {
-  const mode =
-    (disable && "presence-fabbutton--disabled") ||
-    (primary && "presence-fabbutton--primary") ||
-    "presence-fabbutton--secondary";
+  const mode = disable
+    ? "presence-button--disabled"
+    : `presence-button--${buttonStyle}`;
   return (
     <button
       type={type}
       disabled={disable}
       onClick={onClick}
-      className={`${className} presence-fabbutton--${size} ${mode}`}
+      className={`${className} presence-button--${size} ${mode}`}
       style={{
         backgroundColor: `${backgroundColor} !important`,
         color,
-        border: primary && !label && "1px solid #a6a6a6",
-        width: label && "fit-content",
       }}
       {...props}
     >

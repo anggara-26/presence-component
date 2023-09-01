@@ -13,111 +13,99 @@
   line-height: 48px !important;
   height: 3rem;
   width: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  letter-spacing: 0.0625rem;
+  font-weight: 700;
 }
 
 .presence-avatar--large {
   line-height: 96px !important;
   height: 6rem;
   width: 6rem;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  letter-spacing: 0.02rem;
+  font-weight: 700;
 }
 
 /* Button */
 
-.presence-button--primary {
-  background: rgb(0, 133, 255);
-  background: var(
-    --extra-color-gradient-blue,
-    linear-gradient(134deg, #0085ff 0%, #006acc 100%)
-  ) !important;
+.presence-button--primary{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)) !important;
+  --tw-gradient-from: #0085FF var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(0 133 255 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  --tw-gradient-to: #006ACC var(--tw-gradient-to-position) !important;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.presence-button--secondary {
-  color: var(--primary-600, #006acc);
-  border: 1.5px solid var(--primary-500, #0085ff);
+.presence-button--secondary{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 133 255 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 106 204 / var(--tw-text-opacity));
 }
 
-.presence-button--tertiary {
-  color: var(--extra-color-linking-text, #6e5de7);
+.presence-button--tertiary{
+  --tw-text-opacity: 1;
+  color: rgb(110 93 231 / var(--tw-text-opacity));
 }
 
-.presence-button--disabled {
-  color: var(--neutral-400, #999);
-  background: var(--neutral-100, #e6e6e6) !important;
+.presence-button--disabled{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
 }
 
 .presence-button--primary:active,
-.presence-button--secondary:active {
-  background: var(--primary-600, #006acc) !important;
+.presence-button--secondary:active{
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 106 204 / var(--tw-bg-opacity));
+  background-image: none !important;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .presence-button--small{
-  border-radius: 0.75rem;
-  padding: 0.75rem;
-}
-
-.presence-button--medium{
-  border-radius: 1rem;
-  padding: 0.875rem;
-}
-
-.presence-button--large {
-  border-radius: 18px;
-  padding: 16px 54px;
-}
-
-/* FABButton */
-
-.presence-fabbutton--primary {
-  background: var(
-    --extra-color-gradient-blue,
-    linear-gradient(134deg, #0085ff 0%, #006acc 100%)
-  ) !important;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.presence-fabbutton--secondary {
-  color: var(--primary-600, #006acc);
-  border: 1px solid var(--primary-500, #0085ff);
-}
-
-.presence-fabbutton--disabled {
-  color: var(--neutral-400, #999);
-  background: var(--neutral-200, #ccc) !important;
-}
-
-.presence-fabbutton--primary:active,
-.presence-fabbutton--secondary:active {
-  background: var(--primary-600, #006acc) !important;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.presence-fabbutton--small{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   border-radius: 0.75rem;
-  padding: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0075rem;
+  font-weight: 700;
 }
 
-.presence-fabbutton--medium{
+.presence-button--medium{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
-  border-radius: 1rem;
-  padding: 0.875rem;
+  border-radius: 0.75rem;
+  padding-left: 14.5px;
+  padding-right: 14.5px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  letter-spacing: 0.00875rem;
+  font-weight: 700;
 }
 
-.presence-fabbutton--large {
+.presence-button--large {
   border-radius: 10px;
   padding: 16px 50px;
   display: flex;
@@ -126,7 +114,14 @@
   justify-content: center;
   gap: 0.625rem;
   border-radius: 1rem;
-  padding: 1rem;
+  padding-left: 54px;
+  padding-right: 54px;
+  padding-top: 15.5px;
+  padding-bottom: 15.5px;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.01125rem;
+  font-weight: 700;
 }
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -663,8 +658,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.border{
-  border-width: 1px;
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.flex-col-reverse{
+  flex-direction: column-reverse;
 }
 
 :root {
@@ -732,130 +731,4 @@ video {
     #0085ff 0%,
     #006acc 100%
   );
-}
-
-/* Typography */
-
-/* heading */
-
-.heading-1,
-.presence-avatar--large {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.32px;
-}
-
-.heading-2,
-.presence-avatar--medium {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1px;
-}
-
-.heading-3,
-.presence-button--large,
-.presence-fabbutton--large {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.18px;
-}
-
-.heading-4 {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.16px;
-}
-
-.heading-5,
-.presence-button--medium,
-.presence-fabbutton--medium {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.14px;
-}
-
-.heading-6 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.14px;
-}
-
-.heading-7,
-.presence-button--small,
-.presence-fabbutton--small {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.12px;
-}
-
-/* subhead & body */
-
-.heading-sub-1 {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.16px;
-}
-
-.heading-sub-2 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.14px;
-}
-
-.heading-sub-3 {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.6px;
-}
-
-.paragraph-1 {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.16px;
-}
-
-.paragraph-2 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.14px;
-}
-
-.paragraph-3 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.14px;
-}
-
-.paragraph-4 {
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.6px;
 }

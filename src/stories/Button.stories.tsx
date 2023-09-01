@@ -55,24 +55,22 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const NoLabel: Story = {
+export const Icon: Story = {
   args: {
     icon: "plus",
-    primary: true,
   },
 };
 
 export const Label: Story = {
   args: {
-    label: "Primary Button",
-    primary: true,
+    label: "Label Text",
   },
 };
 
 export const Primary: Story = {
   args: {
     icon: "plus",
-    primary: true,
+    buttonStyle: "primary",
     label: "Primary Button",
   },
 };
@@ -80,7 +78,16 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     icon: "plus",
+    buttonStyle: "secondary",
     label: "Secondary Button",
+  },
+};
+
+export const Tertiary: Story = {
+  args: {
+    icon: "plus",
+    buttonStyle: "tertiary",
+    label: "Tertiary Button",
   },
 };
 
