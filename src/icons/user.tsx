@@ -1,14 +1,13 @@
 interface IUserProps {
-  width?: number;
-  color?: string;
+  size?: number;
 }
 
-const IUser = ({ width = 16, color, ...props }: IUserProps) => {
+const IUser = ({ size = 16, ...props }: IUserProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={width}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       {...props}

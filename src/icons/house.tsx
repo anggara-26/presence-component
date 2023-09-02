@@ -1,14 +1,13 @@
 interface IHouseProps {
-  width?: number;
-  color?: string;
+  size?: number;
 }
 
-const IHouse = ({ width = 16, color = "#FFF", ...props }: IHouseProps) => {
+const IHouse = ({ size = 16, ...props }: IHouseProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={width}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       {...props}

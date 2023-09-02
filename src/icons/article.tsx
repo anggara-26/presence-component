@@ -1,13 +1,12 @@
 interface IArticleProps {
-  width?: number;
-  color?: string;
+  size?: number;
 }
 
-const IArticle = ({ width = 16, color, ...props }: IArticleProps) => {
+const IArticle = ({ size = 16, ...props }: IArticleProps) => {
   return (
     <svg
-      width={width}
-      height={width}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

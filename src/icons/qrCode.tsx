@@ -1,14 +1,13 @@
 interface IQRCodeProps {
-  width?: number;
-  color?: string;
+  size?: number;
 }
 
-const IQRCode = ({ width = 16, color, ...props }: IQRCodeProps) => {
+const IQRCode = ({ size = 16, ...props }: IQRCodeProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={width}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       {...props}

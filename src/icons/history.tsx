@@ -1,13 +1,12 @@
 interface IHistoryProps {
-  width?: number;
-  color?: string;
+  size?: number;
 }
 
-const IHistory = ({ width = 16, color = "#FFF", ...props }: IHistoryProps) => {
+const IHistory = ({ size = 16, ...props }: IHistoryProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
+      width={size}
       viewBox="0 0 24 24"
       fill="none"
       {...props}

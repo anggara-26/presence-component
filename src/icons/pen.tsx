@@ -1,14 +1,13 @@
 interface IPenProps {
-  width?: number;
-  color?: string;
+  size?: number;
 }
 
-const IPen = ({ width = 16, color = "#FFF", ...props }: IPenProps) => {
+const IPen = ({ size = 16, ...props }: IPenProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={width}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       {...props}

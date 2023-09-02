@@ -1,14 +1,13 @@
 interface ITrashProps {
-  width?: number;
-  color?: string;
+  size?: number;
 }
 
-const ITrash = ({ width = 16, color = "#FFF", ...props }: ITrashProps) => {
+const ITrash = ({ size = 16, ...props }: ITrashProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width}
-      height={width}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       {...props}
