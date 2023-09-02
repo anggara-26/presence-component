@@ -2,7 +2,11 @@ import { ICross, ISearch } from "src/icons";
 
 interface SearchBarProps {
   /**
-   * What text you want to show when form empty?
+   * What is the default value of this input?
+   */
+  defaultValue?: string;
+  /**
+   * What is your input value?
    */
   value?: string;
   /**
@@ -19,6 +23,7 @@ interface SearchBarProps {
  * Primary UI component for user interaction
  */
 export const SearchBar = ({
+  defaultValue,
   value,
   placeholder,
   onSubmit,
@@ -28,6 +33,7 @@ export const SearchBar = ({
     <form onSubmit={onSubmit} className="presence-searchbar">
       <input
         type="search"
+        defaultValue={defaultValue}
         value={value}
         placeholder={placeholder}
         required

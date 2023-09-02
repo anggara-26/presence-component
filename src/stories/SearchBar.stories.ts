@@ -28,3 +28,10 @@ export const Empty: Story = {
     placeholder: "Cari di sini...",
   },
 };
+
+export const Filled: Story = {
+  args: {
+    placeholder: "Cari di sini...",
+    defaultValue: "Filled with default value",
+  },
+};
