@@ -1,0 +1,21 @@
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.presence-searchbar {
+  @apply flex gap-2.5 bg-neutral-50 py-[9px] px-3.5 rounded-xl;
+}
+
+.presence-searchbar--input {
+  @apply placeholder:text-paragraph-1 placeholder:text-neutral-400 text-neutral-850 w-[266px] outline-none accent-purple-50;
+}
+
+.presence-searchbar--search {
+  @apply text-neutral-600;
+}
+
+.presence-searchbar--clear {
+  @apply text-neutral-600;
+}
