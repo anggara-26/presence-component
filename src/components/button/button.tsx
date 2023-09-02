@@ -70,9 +70,11 @@ export const Button = ({
       type={type}
       disabled={disable}
       onClick={onClick}
-      className={`${className ?? ""} presence-button--${size} ${mode}`}
+      className={`${className ?? ""} ${backgroundColor ? "!bg-none" : ""} ${
+        color ? `outline-inherit` : ""
+      } presence-button--${size} ${mode}`}
       style={{
-        backgroundColor: `${backgroundColor} !important`,
+        backgroundColor,
         color,
       }}
       {...props}

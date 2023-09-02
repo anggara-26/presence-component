@@ -659,20 +659,29 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mr-3{
-  margin-right: 0.75rem;
+.bg-none{
+  background-image: none;
 }
 
-.mr-5{
-  margin-right: 1.25rem;
+.\!bg-none{
+  background-image: none !important;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
+.\!outline-none{
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }
 
-.flex-row-reverse{
-  flex-direction: row-reverse;
+.outline-\[\$\{\}\]{
+  outline-color: ${};
+}
+
+.\!outline-inherit{
+  outline-color: inherit !important;
+}
+
+.outline-inherit{
+  outline-color: inherit;
 }
 
 :root {
@@ -740,4 +749,8 @@ video {
     #0085ff 0%,
     #006acc 100%
   );
+}
+
+.active\:bg-current:active{
+  background-color: currentColor;
 }
