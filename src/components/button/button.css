@@ -4,7 +4,7 @@
 }
 
 .presence-button--secondary {
-  @apply text-primary-600 border border-primary-500;
+  @apply text-primary-600 outline outline-1 outline-primary-500;
 }
 
 .presence-button--tertiary {
@@ -17,7 +17,7 @@
 
 .presence-button--primary:active,
 .presence-button--secondary:active {
-  @apply text-white border-none bg-primary-600 !bg-none;
+  @apply text-white outline-none bg-primary-600 !bg-none;
 }
 
 .presence-button--small {

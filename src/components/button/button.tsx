@@ -32,6 +32,10 @@ interface ButtonProps {
    */
   icon?: React.ReactNode;
   /**
+   * Button children
+   */
+  children?: React.ReactNode;
+  /**
    * Optional click handler
    */
   onClick?: () => void;
@@ -53,6 +57,7 @@ export const Button = ({
   size = "medium",
   label,
   icon,
+  children,
   onClick,
   className,
   ...props
@@ -65,7 +70,7 @@ export const Button = ({
       type={type}
       disabled={disable}
       onClick={onClick}
-      className={`${className} presence-button--${size} ${mode}`}
+      className={`${className ?? ""} presence-button--${size} ${mode}`}
       style={{
         backgroundColor: `${backgroundColor} !important`,
         color,
@@ -74,6 +79,7 @@ export const Button = ({
     >
       {icon}
       {label}
+      {children}
     </button>
   );
 };

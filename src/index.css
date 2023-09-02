@@ -42,11 +42,11 @@
 }
 
 .presence-button--secondary{
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 133 255 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(0 106 204 / var(--tw-text-opacity));
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #0085FF;
 }
 
 .presence-button--tertiary{
@@ -63,12 +63,13 @@
 
 .presence-button--primary:active,
 .presence-button--secondary:active{
-  border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(0 106 204 / var(--tw-bg-opacity));
   background-image: none !important;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .presence-button--small{
@@ -658,12 +659,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.flex-row-reverse{
-  flex-direction: row-reverse;
+.mr-3{
+  margin-right: 0.75rem;
 }
 
-.flex-col-reverse{
-  flex-direction: column-reverse;
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.flex-row-reverse{
+  flex-direction: row-reverse;
 }
 
 :root {
