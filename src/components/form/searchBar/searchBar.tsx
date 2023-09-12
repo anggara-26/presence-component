@@ -1,4 +1,4 @@
-import { ICross, ISearch } from "src/icons";
+import Icon from "../../icon";
 
 interface SearchBarProps {
   /**
@@ -45,13 +45,13 @@ export const SearchBar = ({
         type="button"
         className="block peer-valid:hidden presence-searchbar--search"
       >
-        <ISearch />
+        <Icon type="search" size="small" />
       </button>
       <button
         type="reset"
         className="hidden peer-valid:block presence-searchbar--clear"
       >
-        <ICross />
+        <Icon type="cross" size="small" />
       </button>
     </form>
   );

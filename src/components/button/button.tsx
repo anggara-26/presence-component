@@ -1,3 +1,5 @@
+import Icon, { iconTypesProps } from "../icon";
+
 interface ButtonProps {
   /**
    * What type of button is this?
@@ -30,7 +32,7 @@ interface ButtonProps {
   /**
    * Button icon
    */
-  icon?: React.ReactNode;
+  icon?: keyof typeof iconTypesProps;
   /**
    * Button children
    */
@@ -79,7 +81,7 @@ export const Button = ({
       }}
       {...props}
     >
-      {icon}
+      {icon ? <Icon type={icon} size={size} /> : null}
       {label}
       {children}
     </button>

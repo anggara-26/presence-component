@@ -2,17 +2,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "src/components";
 
-import {
-  IArticle,
-  ICirclePlus,
-  IHistory,
-  IHouse,
-  IPen,
-  IQRCode,
-  ITrash,
-  IUser,
-} from "src/icons";
-
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: "Atomic/Button",
@@ -25,28 +14,6 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    icon: {
-      options: [
-        "plus",
-        "history",
-        "trash",
-        "pen",
-        "user",
-        "article",
-        "qrCode",
-        "house",
-      ],
-      mapping: {
-        plus: <ICirclePlus />,
-        trash: <ITrash />,
-        pen: <IPen />,
-        history: <IHistory />,
-        user: <IUser />,
-        article: <IArticle />,
-        qrCode: <IQRCode />,
-        house: <IHouse />,
-      },
-    },
     backgroundColor: { control: "color" },
   },
 } satisfies Meta<typeof Button>;
@@ -57,7 +24,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Icon: Story = {
   args: {
-    icon: "plus",
+    icon: "circle-plus",
   },
 };
 
@@ -69,7 +36,7 @@ export const Label: Story = {
 
 export const Primary: Story = {
   args: {
-    icon: "plus",
+    icon: "circle-plus",
     buttonStyle: "primary",
     label: "Primary Button",
   },
@@ -77,7 +44,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    icon: "plus",
+    icon: "circle-plus",
     buttonStyle: "secondary",
     label: "Secondary Button",
   },
@@ -85,7 +52,7 @@ export const Secondary: Story = {
 
 export const Tertiary: Story = {
   args: {
-    icon: "plus",
+    icon: "circle-plus",
     buttonStyle: "tertiary",
     label: "Tertiary Button",
   },
@@ -94,7 +61,7 @@ export const Tertiary: Story = {
 export const Disabled: Story = {
   args: {
     disable: true,
-    icon: "plus",
+    icon: "circle-plus",
     label: "Disabled Button",
   },
 };
