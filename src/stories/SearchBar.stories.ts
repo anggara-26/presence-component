@@ -32,6 +32,6 @@ export const Empty: Story = {
 export const Filled: Story = {
   args: {
     placeholder: "Cari di sini...",
-    defaultValue: "Filled with default value",
+    value: "Filled Search Input",
   },
 };

@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction, useState } from "react";
 import Icon from "../../icon";
 
 interface SearchBarProps {
@@ -29,18 +30,23 @@ export const SearchBar = ({
   onSubmit,
   ...props
 }: SearchBarProps) => {
+  const [val, setVal] = useState(value);
   return (
-    <form onSubmit={onSubmit} className="presence-searchbar">
+    <form
+      onSubmit={onSubmit}
+      onReset={() => setVal("")}
+      className="presence-searchbar"
+    >
       <input
         type="search"
         defaultValue={defaultValue}
-        value={value}
+        value={val}
         placeholder={placeholder}
+        onChange={({ target }) => setVal(target.value)}
         required
         className="peer presence-searchbar--input"
         {...props}
       />
-      {value}
       <button
         type="button"
         className="block peer-valid:hidden presence-searchbar--search"
