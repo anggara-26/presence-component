@@ -17,7 +17,7 @@ interface SearchBarProps {
   /**
    * What you want to do when form submitted?
    */
-  onSubmit?: () => void;
+  onSubmit?: (e) => void;
 }
 
 /**
