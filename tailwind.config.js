@@ -179,10 +179,10 @@ export default {
           600: "#666666",
           700: "#4D4D4D",
           800: "#333333",
-          850: "#000000",
+          900: "#000000",
         },
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };

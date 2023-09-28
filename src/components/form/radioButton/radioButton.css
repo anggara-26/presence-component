@@ -1,0 +1,11 @@
+.presence-radiobutton {
+  @apply flex items-center gap-2;
+}
+
+.presence-radiobutton--input {
+  @apply checked:bg-emerald-400 checked:hover:bg-emerald-400 checked:active:bg-emerald-400 checked:focus:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400;
+}
+
+.presence-radiobutton--label {
+  @apply text-subhead-2 text-neutral-900;
+}

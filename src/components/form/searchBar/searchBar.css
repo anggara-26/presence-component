@@ -9,7 +9,7 @@
 }
 
 .presence-searchbar--input {
-  @apply placeholder:text-paragraph-1 placeholder:text-neutral-400 text-neutral-850 w-[266px] outline-none accent-purple-50;
+  @apply placeholder:text-paragraph-1 placeholder:text-neutral-400 text-neutral-900 w-[266px] outline-none accent-purple-50;
 }
 
 .presence-searchbar--search {
